@@ -29,3 +29,10 @@ Promise.myAllSettled([promise1, promise2, promise3])
   .then((results) => {
       console.log(results)
   });
+
+//  [
+//   { status: 'fulfilled', value: 10 },
+//   { status: 'rejected', reason: 'Error occurred' },
+//   { status: 'fulfilled', value: 20 }
+// ]
+
