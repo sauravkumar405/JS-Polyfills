@@ -7,4 +7,4 @@ Object.prototype.myEntries = function(obj){
 }
 
 const obj = { a: 1, b: 2, c: 3 };
-console.log(Object.myEntries(obj));
+console.log(Object.myEntries(obj)); // [ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ]
