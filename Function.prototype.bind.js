@@ -3,7 +3,6 @@ Function.prototype.mybind = function(scope, ...args1){
     return function(...args2){
         scope = scope
         let uniqueKey = Symbol('fn')
-        scope[uniqueKey] = fn
         let result = scope[uniqueKey](...args1, ...args2)
         delete scope[uniqueKey]
         return result
